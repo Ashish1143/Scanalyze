@@ -1,8 +1,8 @@
-# scanalytics
+# TransSync_Analytics
 
-![Plot](scanalytics%20wallpaper.png)
+![Plot](TransSync_Analytics%20wallpaper.png)
 
-scanalytics is a Python implementation of several analyses used in Supply Chain
+TransSync_Analytics is a Python implementation of several analyses used in Supply Chain
 Analytics & Design. I wrote this program to programmatically
 solve problems encountered in some Supply Chain Analytics and Design class
 assignments, thus minimizing tedious manual work on spreadsheet.
@@ -22,7 +22,7 @@ assignments, thus minimizing tedious manual work on spreadsheet.
 #### Example
 
 ```
-from scanalytics import *
+from TransSync_Analytics import *
 from IPython.display import display
 cwsa = CWSA()
 cwsa.add_dist(1,2,16.3)
@@ -64,7 +64,7 @@ display(CWSA_savings_df)
 #### Example
 
 ```
-from scanalytics import *
+from TransSync_Analytics import *
 from IPython.display import display
 
 demand_forecast = [1040,240,480,400,1600,4400,1440,1120,480,400,800,2000]
@@ -80,7 +80,7 @@ status,inventory,prod_schedule,total_cost = MPS_MILP(demand_forecast,setup_cost,
 #### Example
 
 ```
-from scanalytics import *
+from TransSync_Analytics import *
 from IPython.display import display
 
 demand_forecast = [1040,240,480,400,1600,4400,1440,1120,480,400,800,2000]
@@ -96,7 +96,7 @@ inventory,prod_schedule,total_cost = MPS_onetime(demand_forecast,setup_cost,hold
 #### Example
 
 ```
-from scanalytics import *
+from TransSync_Analytics import *
 from IPython.display import display
 
 demand_forecast = [1040,240,480,400,1600,4400,1440,1120,480,400,800,2000]
@@ -112,7 +112,7 @@ inventory,prod_schedule,total_cost = MPS_chase(demand_forecast,setup_cost,holdin
 #### Example
 
 ```
-from scanalytics import *
+from TransSync_Analytics import *
 from IPython.display import display
 
 demand_forecast = [1040,240,480,400,1600,4400,1440,1120,480,400,800,2000]
@@ -128,7 +128,7 @@ inventory,prod_schedule,total_cost = MPS_silvermeal(demand_forecast,setup_cost,h
 #### Example
 
 ```
-from scanalytics import *
+from TransSync_Analytics import *
 from IPython.display import display
 
 demand_forecast = [1040,240,480,400,1600,4400,1440,1120,480,400,800,2000]
@@ -150,14 +150,14 @@ Alternatively, if you are using Anaconda, activate the environment in
 command prompt or terminal as follows.
 
 ```
-conda env create -f scanalytics.yaml
-source activate scanalytics
+conda env create -f TransSync_Analytics.yaml
+source activate TransSync_Analytics
 ```
 
 # Installation
 Clone this repository as follows.
 
-`git clone https://github.com/ragamarkely/scanalytics.git`
+`git clone https://github.com/ragamarkely/TransSync_Analytics.git`
 
 # Notes
 This is by no means a complete collection of all analyses. There are other
